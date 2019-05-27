@@ -6,9 +6,10 @@
 The answer depends on distributional assumptions for the number of goals a
 player scores in a game.
 
-If a player can score only one goal per game and player scores in a
-game is i.i.d., then the solution below for a Bernoulli distribution applies.
-If a player can score more than one goal in a game, though, 
+Assuming the number of goals a player gets in a game is i.i.d., then the search
+algorithm in `express.py` should eventually find the solution (if it exists).
+I've written it for the case where the number of goals follows a Bernoulli
+distribution, but it's easy to extend it for other distributions.
 
 # How I did it
 
