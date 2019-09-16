@@ -1,3 +1,11 @@
+# Problem statement
+[Original
+article](https://fivethirtyeight.com/features/can-you-help-dakota-jones-raid-the-lost-arc/)
+
+> The challenge is to find the longest string of letters in which (1) every
+> pair of consecutive letters is a two-letter state or territory abbreviation,
+> and (2) no state abbreviation occurs more than once.
+
 # My solution
 
 The longest chain we can make using just states and possessions is
@@ -6,13 +14,9 @@ The longest chain we can make using just states and possessions is
 longer chains.  My code is still running for the case including military postal
 abbreviations.
 
-
 # How I did it
 
-
-Clojure code is in [`classic.clj`](./classic.clj) in this directory.  
-
-
+Clojure code is in [`classic.clj`](./classic.clj) in this directory.
 
 We can represent the possible sequences of states as a tree (see the
 illustration below).  To figure out what states can come next in a sequence, we
