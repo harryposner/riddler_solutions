@@ -34,7 +34,7 @@
          best nil
          best-count 0]
     (let [current (first remaining)
-          current-count (count-current)]
+          current-count (count current)]
       (cond
         (empty? remaining) best
         (> current-count best-count) (recur (rest remaining) current current-count)
