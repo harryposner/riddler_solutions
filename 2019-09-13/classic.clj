@@ -31,12 +31,14 @@
 
 (defn longest-chain [chains]
   (loop [remaining chains
-         best nil]
-    (let [current (first remaining)]
+         best nil
+         best-count 0]
+    (let [current (first remaining)
+          current-count (count-current)]
       (cond
         (empty? remaining) best
-        (> (count current) (count best)) (recur (rest remaining) current)
-        :else (recur (rest remaining) best)))))
+        (> current-count best-count) (recur (rest remaining) current current-count)
+        :else (recur (rest remaining) best best-count)))))
 
 (defn all-chains-for-state [states state]
   (-> state
