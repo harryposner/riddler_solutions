@@ -7,12 +7,12 @@ article](https://fivethirtyeight.com/features/can-you-help-dakota-jones-raid-the
 > and (2) no state abbreviation occurs more than once.
 
 # My solution
-
 The longest chain we can make using just states and possessions is
-`FMPWVAKSCTNVIARIDCOHINMNCALASDE`.  It's not unique
-(`FMNVAKSCTNMPWVIARIDCOHINCALASDE` is just as long), but there aren't any
-longer chains.  My code is still running for the case including military postal
-abbreviations.
+`FMPWVAKSCTNVIARIDCOHINMNCALASDE` (31 characters).  It's not unique
+(`FMNVAKSCTNMPWVIARIDCOHINCALASDE` is just as long), but there aren't any longer
+chains.  My code is still running for the case including military postal
+abbreviations, but working from the solution above, I can fit in
+`FMAAPWVAKSCTNVIARIDCOHINMNCALASDE` (33 characters)
 
 # How I did it
 
