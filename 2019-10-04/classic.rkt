@@ -16,17 +16,19 @@
            (general-binomial population combo-size))))
 
 
-(plot-width 800)
-(plot-height 800)
-(plot-font-size 14)
+(plot-width 1000)
+(plot-height 1000)
+(plot-font-size 24)
+
 (plot-file
   (list
     (hrule 1/2
            #:style 'long-dash
-           #:color "dark gray")
+           #:color "dim gray"
+           #:width 2)
     (function (curry bday-prob 3)
-              #:width 1.5
-              3 200))
+              3 200
+              #:width 3))
   "birthday_probability.png"
   #:x-min 0
   #:x-max 200
